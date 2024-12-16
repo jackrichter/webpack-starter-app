@@ -10,7 +10,18 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		filename: "[name][contenthash].js" // Will use the name 'bundle' with unique hash number
 	},
+	devServer: {
+		static: {
+			directory: path.resolve(__dirname, "dist")
+		},
+		port: 3000,
+		open: true,
+		hot: true,
+		compress: true,
+		historyApiFallback: true
+	},
 	module: {
+		// Loaders
 		rules: [
 			{
 				test: /\.scss$/,
@@ -22,7 +33,8 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: "Webpack App",
 			filename: "index.html",
-			template: "src/template.html"
+			template: "src/template.html",
+			favicon: "src/android-chrome-192x192.png"
 		})
 	]
 };
