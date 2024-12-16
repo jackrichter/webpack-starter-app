@@ -2,6 +2,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/generateJoke.js":
+/*!*****************************!*\
+  !*** ./src/generateJoke.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function generateJoke() {
+  return "I don't trust stairs. They are always up to something :)";
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
@@ -528,25 +545,6 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/generateJoke.js":
-/*!*****************************!*\
-  !*** ./src/generateJoke.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function generateJoke() {
-	return "I don't trust stairs. They are always up to something :)";
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
-
-
-/***/ }),
-
 /***/ "./node_modules/uuid/dist/esm-browser/native.js":
 /*!******************************************************!*\
   !*** ./node_modules/uuid/dist/esm-browser/native.js ***!
@@ -798,12 +796,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 console.log((0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])());
 console.log((0,uuid__WEBPACK_IMPORTED_MODULE_2__["default"])());
-
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle0803d93a12f88d3dd75d.js.map
+//# sourceMappingURL=bundle490e8bcd93254898e5bd.js.map
