@@ -11,6 +11,7 @@ module.exports = {
 		filename: "[name][contenthash].js", // Will use the name 'bundle' with unique hash number
 		clean: true // Prevent multiple bundle files adding up every time we add something and build again
 	},
+	devtool: "source-map", // Helps in debugging
 	devServer: {
 		static: {
 			directory: path.resolve(__dirname, "dist")
