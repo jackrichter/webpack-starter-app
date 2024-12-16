@@ -8,7 +8,8 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "[name][contenthash].js" // Will use the name 'bundle' with unique hash number
+		filename: "[name][contenthash].js", // Will use the name 'bundle' with unique hash number
+		clean: true // Prevent multiple bundle files adding up every time we add something and build again
 	},
 	devServer: {
 		static: {

@@ -4,4 +4,3 @@ import "./styles/main.scss";
 
 console.log(generateJoke());
 console.log(uuidv4());
-console.log(1);
