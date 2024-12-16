@@ -8,5 +8,13 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "[name].js" // Will use the name 'bundle'
+	},
+	module: {
+		rules: [
+			{
+				test: /\.scss$/,
+				use: ["style-loader", "css-loader", "sass-loader"]
+			}
+		]
 	}
 };
