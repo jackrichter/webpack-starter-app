@@ -9,7 +9,8 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "[name][contenthash].js", // Will use the name 'bundle' with unique hash number
-		clean: true // Prevent multiple bundle files adding up every time we add something and build again
+		clean: true, // Prevent multiple bundle files adding up every time we add something and build again
+		assetModuleFilename: "[name][ext]" // Keep image's original name in dist file
 	},
 	devtool: "source-map", // Helps in debugging
 	devServer: {
@@ -38,6 +39,10 @@ module.exports = {
 						presets: ["@babel/preset-env"]
 					}
 				}
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i, // Loader for images comes with webpack, no need to download anything
+				type: "asset/resource"
 			}
 		]
 	},
